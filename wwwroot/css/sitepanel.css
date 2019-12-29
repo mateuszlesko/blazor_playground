@@ -1,15 +1,40 @@
 .sitenav--left{
-    padding: 2.5rem 0;
     width: 300px;
     float:left;
     margin-left: 0px;
-    height: 40%;
+    height: 560px;
+    border: solid 1px #E8E8E8;
+    
 }
-.sitenav--theme{
+.sidenav--theme{
     background-color: blueviolet;
+    width: 100%;
+    padding: 2.5rem 0;
+    
+    border-bottom-left-radius: 40px;
+    /* border-bottom-right-radius: 40px; */
+
+}
+.clearfix{
+    margin-top: 50px;
+}
+.nav-application{
+    text-align: center;
+}
+.nav-content > a:first-child{
+    margin-left: 60px;
+}
+.nav-content{
+    display: flex;
+}
+.nav-content > a{
+    margin-right: 60px;
 }
 .avatar.rounded-circle img {
     border-radius: 50%;
+}
+.a--top{
+    margin-top: 24px;
 }
 @media (max-width:400px)
 {

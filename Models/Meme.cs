@@ -9,7 +9,7 @@ namespace memespot_client.Models
             private MemeCategory memeCategory {get;set;}
             private MemeImg memeImg {get;set;}
             private string title {get;set;}
-            private DateTime uploadDate = System.DateTime.Now;
+            public DateTime uploadDate = System.DateTime.Now;
             public Profile profile {get;set;}
             public Int32 votes = 0;
 
@@ -57,6 +57,9 @@ namespace memespot_client.Models
             public Int32[] GetSize()
             {
                 return memeImg.GetSize();
+            }
+            public Profile GetProfile(){
+                return profile;
             }
             public void VoteUp(){
                 votes+=1;

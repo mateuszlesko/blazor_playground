@@ -1,7 +1,9 @@
 @{
     ViewData["Title"] = "MemeSpot";
 }
+<partial name="../Profile/_SitePanel" />
 <div class="page-content" float="left">
+
 <div class="row">
     @foreach (var meme in ViewData["content"] as IList<Meme>)
     {
@@ -11,6 +13,9 @@
                 <div class="card-header"><h6 class="mb-0">@meme.GetTitle()</h6>&nbsp;&nbsp;<span>@meme.GetCategory()</span></div>
                 <div class="card-body" position="relative">
                     <img class="meme" src="@meme.GetPath()"alt="meme" width="@size[0] px" height="@size[1] px"> 
+                </div>
+                <div class="card-footer text-muted">
+                    @meme.uploadDate by @meme.GetProfile().login
                 </div>
             </div>
         </div>

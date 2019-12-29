@@ -24,14 +24,14 @@ namespace memespot_client.Controllers
             ViewBag.UserProfile = new Profile("Matt13",img,new Sex("male"));
             return View();
         }
-        public PartialViewResult Action()
+        public IActionResult _SitePanel(Profile profile)
         {
             ProfileImg img = new ProfileImg("user1.jpg");
-            Profile profile = new Profile("Matt13",img,new Sex("male"));
-            TempData["ProfileLogin"] = profile.login;
-            var model = new Profile("Matt13",img,new Sex("male"));
-            ViewBag.Profile = model;
-            return PartialView("~/Views/Shared/_Layout.cshtml", model);
+            Profile model = new Profile("Matt13",img,new Sex("male"));
+            ViewBag.Profile = model.login;
+            Console.WriteLine(model.login);
+            ViewBag.XD = "XD";
+            return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

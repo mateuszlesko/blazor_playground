@@ -22,8 +22,8 @@ namespace memespot_client.Controllers
         {
             List<Meme> memes = new List<Meme>()
             {
-                new Meme(new MemeCategory("got"),new MemeImg("got.jpg"),"Defnely Not me"),
-                new Meme(new MemeCategory("politic"),new MemeImg("politics.jpg"),"Maybe..")
+                new Meme(new MemeCategory("got"),new MemeImg("got.jpg"),"Definitely Not me",new Profile("Matt13",new ProfileImg("user1.jpg"),new Sex("male"))),
+                new Meme(new MemeCategory("politic"),new MemeImg("politics.jpg"),"Maybe..",new Profile("Ola231",null,new Sex("female")))
             };
             ViewData["content"] = memes;
             ViewBag.msg = new Meme(new MemeCategory("politic"),new MemeImg("politics.jpg"),"Maybe..");
