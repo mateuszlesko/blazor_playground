@@ -24,15 +24,6 @@ namespace memespot_client.Controllers
             ViewBag.UserProfile = new Profile("Matt13",img,new Sex("male"));
             return View();
         }
-        // public IActionResult _SitePanel(Profile profile)
-        // {
-        //     ProfileImg img = new ProfileImg("user1.jpg");
-        //     Profile model = new Profile("Matt13",img,new Sex("male"));
-        //     ViewBag.Profile = model.login;
-        //     Console.WriteLine(model.login);
-            
-        //     return View();
-        // }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
