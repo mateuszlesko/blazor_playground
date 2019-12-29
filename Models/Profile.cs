@@ -9,9 +9,9 @@ namespace memespot_client.Models
         private string path {get;set;}
         private Int32 height{get;set;}
         private Int32 width{get;set;}
-        public ProfileImg(string sPath)
+        public ProfileImg(string? sPath)
         {
-            this.path = @"\profilesImg\usersProfilesImg\"+sPath;
+            this.path = @"\profilesImg\usersProfilesImg\"+sPath ?? @"\profilesImg\defaultProfilesImg\";
             SetSize();
         }
         public string GetPath()

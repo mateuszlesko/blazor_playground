@@ -1,34 +1,30 @@
- <div class="sidenav sitenav--left">
-        <div class="sidenav-user d-flex flex-column align-items-center justify-content-between text-center">
-            <div class="sidenav--theme">
-                <a href="#" class="avatar rounded-circle avatar-xl">
-                    <img width="96" height="96" src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/60837338_2198098093609974_7867646454318235648_n.jpg?_nc_cat=102&_nc_ohc=ziZSsMWq_zMAQnjA_AZ5F5AJqIKEO28VXoJm07YYaBmyjRDNqGfe0Dtfg&_nc_ht=scontent.fwaw3-1.fna&oh=7154bb1c9ce6f9b162987d6daf2e9619&oe=5E68DACE">
-                </a>
-                <div class="mt-4">
-                    <h5 class="mb-0">Mateusz Lesko</h5>
-                    <a href="#" class="btn btn-sm btn-white btn-icon rounded-pill shadow hover-translate-y-n3">
-                        <span class="btn-inner--text">2300 pts</span>
-                    </a>
-                </div>
-            </div>
-            <div class="nav-application clearfix">
-                <a asp-area="" asp-controller="Meme" asp-action="Index">
-                    <span class="btn-inner--icon d-block">
-                        <i class="far fa-home fa-2x"><img src="\websiteImgs\meme_icon.png" height="48" width="48"></i>
-                    </span>
-                    <span class="btn-inner--icon d-block pt-2">
-                        Memes
-                    </span>
-                </a>
-                  <a asp-area="" asp-controller="Profile" asp-action="Index">
-                    <span class="btn-inner--icon d-block">
-                        <i class="far fa-home fa-2x"><img src="\websiteImgs\profile_icon.png" height="48" width="48"></i>
-                    </span>
-                    <span class="btn-inner--icon d-block pt-2">
-                        Profile
-                    </span>
-                </a>
-
-            </div>
+  <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Full Name</strong>
+          <a href="#">Follow</a>
         </div>
+        <span class="d-block">username</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Full Name</strong>
+          <a href="#">Follow</a>
         </div>
+        <span class="d-block">username</span>
+      </div>
+    </div>
+    <div class="media text-muted pt-3">
+      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+      <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <strong class="text-gray-dark">Full Name</strong>
+          <a href="#">Follow</a>
+        </div>
+        <span class="d-block">username</span>
+      </div>
+    </div> 

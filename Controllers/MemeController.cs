@@ -26,7 +26,6 @@ namespace memespot_client.Controllers
                 new Meme(new MemeCategory("politic"),new MemeImg("politics.jpg"),"Maybe..",new Profile("Ola231",null,new Sex("female")))
             };
             ViewData["content"] = memes;
-            ViewBag.msg = new Meme(new MemeCategory("politic"),new MemeImg("politics.jpg"),"Maybe..");
             return View();
         }
 

@@ -22,6 +22,12 @@ namespace memespot_client.Controllers
         {
             ProfileImg img = new ProfileImg("user1.jpg");
             ViewBag.UserProfile = new Profile("Matt13",img,new Sex("male"));
+            List<Profile>profiles = new List<Profile>(){
+                new Profile("BrianDoggy",null,new Sex("male")),
+                new Profile("Meggy",null,new Sex("female")),
+                new Profile("Warmachine",null,new Sex("ah-64"))
+            };
+            ViewData["profiles"] = profiles;
             return View();
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
