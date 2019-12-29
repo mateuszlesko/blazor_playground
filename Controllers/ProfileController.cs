@@ -9,26 +9,27 @@ using memespot_client.Models;
 
 namespace memespot_client.Controllers
 {
-    public class MemeController : Controller
+    public class ProfileController : Controller
     {
-        private readonly ILogger<MemeController> _logger;
+        private readonly ILogger<ProfileController> _logger;
 
-        public MemeController(ILogger<MemeController> logger)
+        public ProfileController(ILogger<ProfileController> logger)
         {
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            List<Meme> memes = new List<Meme>()
-            {
-                new Meme(new MemeCategory("got"),new MemeImg("got.jpg"),"Definitely Not me",new Profile("Matt13",new ProfileImg("user1.jpg"),new Sex("male"))),
-                new Meme(new MemeCategory("politic"),new MemeImg("politics.jpg"),"Maybe..",new Profile("Ola231",null,new Sex("female")))
+            ProfileImg img = new ProfileImg("user1.jpg");
+            ViewBag.UserProfile = new Profile("Matt13",img,new Sex("male"));
+            List<Profile>profiles = new List<Profile>(){
+                new Profile("BrianDoggy",null,new Sex("male")),
+                new Profile("Meggy",null,new Sex("female")),
+                new Profile("Warmachine",null,new Sex("ah-64"))
             };
-            ViewData["content"] = memes;
+            ViewData["profiles"] = profiles;
             return View();
         }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

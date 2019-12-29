@@ -9,16 +9,24 @@ namespace memespot_client.Models
             private MemeCategory memeCategory {get;set;}
             private MemeImg memeImg {get;set;}
             private string title {get;set;}
-            private DateTime uploadDate = System.DateTime.Now;
-
+            public DateTime uploadDate = System.DateTime.Now;
+            public Profile profile {get;set;}
             public Int32 votes = 0;
 
             public Meme(){}
             public Meme(MemeCategory c,MemeImg img,string title)
             {
-                this.memeCategory = c ?? null;
-                this.memeImg = img ?? null;
+                this.memeCategory = c;
+                this.memeImg = img;
                 this.title = title ?? "Untitled";
+                this.votes = 0;
+            }
+            public Meme(MemeCategory c,MemeImg img,string title,Profile p)
+            {
+                this.memeCategory = c;
+                this.memeImg = img;
+                this.title = title ?? "Untitled";
+                this.profile = p;
                 this.votes = 0;
             }
             public void setMemeCategory(MemeCategory c)
@@ -49,6 +57,9 @@ namespace memespot_client.Models
             public Int32[] GetSize()
             {
                 return memeImg.GetSize();
+            }
+            public Profile GetProfile(){
+                return profile;
             }
             public void VoteUp(){
                 votes+=1;
