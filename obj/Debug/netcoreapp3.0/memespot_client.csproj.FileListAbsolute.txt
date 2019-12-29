@@ -86,4 +86,4 @@ C:\Users\4ever\OneDrive\Documents\memespot_client\bin\Debug\netcoreapp3.0\runtim
 C:\Users\4ever\OneDrive\Documents\memespot_client\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\4ever\OneDrive\Documents\memespot_client\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\4ever\OneDrive\Documents\memespot_client\obj\Debug\netcoreapp3.0\Razor\Views\Profile\Index.cshtml.g.cs
-C:\Users\4ever\OneDrive\Documents\memespot_client\obj\Debug\netcoreapp3.0\Razor\Views\Profile\_SitePanel.cshtml.g.cs
+C:\Users\4ever\OneDrive\Documents\memespot_client\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_SitePanel.cshtml.g.cs
