@@ -1,20 +1,21 @@
 @{
     ViewData["Title"] = "MemeSpot";
 }
-<div class="page-content">
+<div class="page-content" float="left">
 <div class="row">
     @foreach (var meme in ViewData["content"] as IList<Meme>)
     {
         Int32[] size = meme.GetSize(); 
-        <div class="col-xl-8 col-md-10">
+        <div class="col-xl-8 col-md-8">
             <div class="card card-fluid">
-                <div class="card-header"><h6 class="mb-0">@{meme.GetTitle();}</h6></div>
+                <div class="card-header"><h6 class="mb-0">@meme.GetTitle()</h6>&nbsp;&nbsp;<span>@meme.GetCategory()</span></div>
                 <div class="card-body" position="relative">
-                    <img src="@meme.GetPath()"alt="meme" width="@size[0] px" height="@size[1] px" margin="auto"> 
+                    <img class="meme" src="@meme.GetPath()"alt="meme" width="@size[0] px" height="@size[1] px"> 
                 </div>
             </div>
         </div>
        
     }
+    </div>
 </div>
 </div>

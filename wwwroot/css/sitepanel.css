@@ -1,0 +1,19 @@
+.sitenav--left{
+    padding: 2.5rem 0;
+    width: 300px;
+    float:left;
+    margin-left: 0px;
+    height: 40%;
+}
+.sitenav--theme{
+    background-color: blueviolet;
+}
+.avatar.rounded-circle img {
+    border-radius: 50%;
+}
+@media (max-width:400px)
+{
+    .sitepanel--left{
+        display: none;
+    }
+}
